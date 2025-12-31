@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <h1>🎂 Happy Birthday <span id="name">Your Name</span>! 🎉</h1>
+  <img src="https://i.imgur.com/4AiXzf8.png" class="cake" alt="Cake">
+
+  <div class="wish-box" id="wishBox">Tap the button to reveal a wish!</div>
+  <button onclick="showWish()">Show Wish</button>
+  <button id="musicBtn" onclick="playMusic()">Play Music</button>
+  <button onclick="showPanda()">🐼 Panda Surprise</button>
+
+  <!-- Balloons -->
+  <img src="https://i.imgur.com/7yUvePI.png" class="balloon" style="left:10%;">
+  <img src="https://i.imgur.com/7yUvePI.png" class="balloon" style="left:40%; animation-delay:2s;">
+  <img src="https://i.imgur.com/7yUvePI.png" class="balloon" style="left:70%; animation-delay:4s;">
+
+  <!-- Panda -->
+  <img src="https://i.imgur.com/0rKXQpT.png" class="panda" id="panda" alt="Cute Panda">
+
+  <!-- Music -->
+  <audio id="bgMusic" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
